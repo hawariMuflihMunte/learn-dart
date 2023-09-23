@@ -4,3 +4,7 @@ int f(x) {
   }
   return x + 1;
 }
+
+void main() {
+  print(f(8));
+}
