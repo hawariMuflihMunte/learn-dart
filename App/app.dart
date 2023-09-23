@@ -1,7 +1,7 @@
 import 'Class/Spacecraft.dart';
 import 'Enum/Planet.dart';
 
-void main() {
+void main() async {
   var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
   voyager.describe();
 
