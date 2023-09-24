@@ -4,7 +4,7 @@ class Point {
 }
 
 void main() {
-  var p1 = Point();
-  p1.x = 10;
-  p1.y = 10;
+  var p1 = Point()
+    ..x = 10
+    ..y = 20;
 }
