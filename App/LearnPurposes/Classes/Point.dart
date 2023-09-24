@@ -2,21 +2,28 @@ class Point {
   int x = 0;
   int y = 0;
 
-  void move(int x1, int y1) {
-    x = x1;
-    y = y1;
+  Point move(int x, int y) {
+    this.x = x;
+    this.y = y;
+
+    return this;
   }
 
-  void show() {
+  Point reset() {
+    this.x = 0;
+    this.y = 0;
+
+    return this;
+  }
+
+  Point show() {
     print('Point($x, $y)');
+
+    return this;
   }
 }
 
 void main() {
-  var p1 = Point()
-    ..x = 10
-    ..y = 20;
-
-  p1.move(100, 200);
-  p1.show();
+  var p1 = Point();
+  p1.move(10, 20).show().reset();
 }
