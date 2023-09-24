@@ -1,8 +1,15 @@
+import 'dart:math';
+
 class Point {
   int x = 0;
   int y = 0;
 
   Point(this.x, this.y);
+
+  Point.origin() {
+    this.x = 0;
+    this.y = 0;
+  }
 
   Point move() {
     this.x = x;
