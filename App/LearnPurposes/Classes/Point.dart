@@ -1,6 +1,12 @@
+import 'dart:math';
+
 class Point {
   int x = 0;
   int y = 0;
+
+  Point() {
+    print('Constructor was called');
+  }
 
   Point move(int x, int y) {
     this.x = x;
