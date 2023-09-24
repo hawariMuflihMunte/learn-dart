@@ -1,27 +1,27 @@
 class Point {
-  int x = 0;
-  int y = 0;
+  int _x = 0;
+  int _y = 0;
 
-  Point({this.x = 0, this.y = 0});
-
-  Point.origin():  this(x: 0, y: 0);
+  Point({int x = 0, int y = 0})
+    : _x = x,
+      _y = y;
 
   Point move() {
-    this.x = x;
-    this.y = y;
+    this._x = _x;
+    this._y = _y;
 
     return this;
   }
 
   Point reset() {
-    this.x = 0;
-    this.y = 0;
+    this._x = 0;
+    this._y = 0;
 
     return this;
   }
 
   Point show() {
-    print('Point($x, $y)');
+    print('Point(x = $_x, y = $_y)');
 
     return this;
   }
