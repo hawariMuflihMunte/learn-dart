@@ -1,14 +1,10 @@
-import 'dart:math';
-
 class Point {
   int x = 0;
   int y = 0;
 
-  Point() {
-    print('Constructor was called');
-  }
+  Point(this.x, this.y);
 
-  Point move(int x, int y) {
+  Point move() {
     this.x = x;
     this.y = y;
 
@@ -30,6 +26,6 @@ class Point {
 }
 
 void main() {
-  var p1 = Point();
-  p1.move(10, 20).show().reset();
+  var p1 = Point(10, 20);
+  p1.move().show().reset();
 }
