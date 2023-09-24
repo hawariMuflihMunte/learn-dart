@@ -1,15 +1,10 @@
-import 'dart:math';
-
 class Point {
   int x = 0;
   int y = 0;
 
-  Point(this.x, this.y);
+  Point({this.x = 0, this.y = 0});
 
-  Point.origin() {
-    this.x = 0;
-    this.y = 0;
-  }
+  Point.origin():  this(x: 0, y: 0);
 
   Point move() {
     this.x = x;
@@ -33,6 +28,6 @@ class Point {
 }
 
 void main() {
-  var p1 = Point(10, 20);
+  var p1 = Point(x: 10, y: 20);
   p1.move().show().reset();
 }
